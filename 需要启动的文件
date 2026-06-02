@@ -1,0 +1,46 @@
+#Receiving and sending of serial ports
+roscore
+cd ~/Desktop/2024电赛_井字棋/通信/communication_ws01
+catkin_make
+source ./devel/setup.bash 
+rosrun serial_test serial_test #The serial port of the upper computer receives data
+
+cd ~/Desktop/2024电赛_井字棋/通信/communication_ws01
+catkin_make
+source ./devel/setup.bash 
+rosrun topic_example publish_node
+
+rostopic echo /chessboard_centers
+
+#mode2 and mode3
+cd ~/Desktop/2024电赛_井字棋/识别/color_ws
+catkin_make
+source ./devel/setup.bash
+roslaunch usb_cam usb_cam-test.launch
+
+cd ~/Desktop/2024电赛_井字棋/识别/color_ws
+catkin_make
+source ./devel/setup.bash
+rosrun color_dected color_dectednew.py
+
+rqt_image_view 
+
+#mode4
+cd ~/Desktop/2024电赛_井字棋/博弈算法-极大极小算法/tic_tac_toe_ws
+catkin_make
+source ./devel/setup.bash
+rosrun test_pkg game.py
+
+rostopic echo /mubiaopoint
+
+rostopic echo /target_point
+
+# mode5
+cd ~/Desktop/2024电赛_井字棋/博弈算法-极大极小算法/tic_tac_toe_ws
+catkin_make
+source ./devel/setup.bash
+rosrun test_pkg_t5 game.py
+
+rostopic echo /mubiaopoint_t5
+
+rostopic echo /target_point_t5

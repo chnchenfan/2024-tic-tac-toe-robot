@@ -1,0 +1,50 @@
+# ROS/catkin generated files
+build/
+devel/
+install/
+log/
+.catkin_tools/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Keil/embedded build outputs
+OBJ/
+Listings/
+Objects/
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.lst
+*.lnp
+*.dep
+*.htm
+*.iex
+*.Bak
+*.bak
+
+# IDE/user files
+*.uvguix.*
+*.uvgui.*
+*.uvoptx
+JLinkLog.txt
+JLinkSettings.ini
+DebugConfig/
+
+# Archives and temporary files
+*.zip
+*.rar
+*.7z
+*.tmp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

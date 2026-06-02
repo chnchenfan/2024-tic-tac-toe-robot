@@ -1,0 +1,412 @@
+void mode4_control()
+{
+	if(heiqiboyi_flag==0)
+	{//走5号
+		xitie = 1;
+						delay_ms(1500);
+						MMGG1 = 1;
+						MMGG2 = 1;
+						MMGG3 = 1;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(4103);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(2570);	
+												MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						xitie = 0;
+						delay_ms(1000);
+						MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG1 = 0;
+						MMGG2 = 0;
+						MMGG3 = 0;									
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(4103);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(2570);		
+						MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						Set_Pwm(0,0,0,0);
+						heiqiboyi_flag++;
+	}
+	if(HAOMA1==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG1 = 1;
+						MMGG2 = 1;
+						MMGG3 = 0;
+						MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(5641);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(9359);	
+												MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						xitie = 0;
+						delay_ms(1000);
+		MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG1 = 0;
+						MMGG2 = 0;
+						MMGG3 = 1;									
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(5641);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(9359);	
+						MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(0,0,0,0);
+	}
+			else if(HAOMA2==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG1 = 1;
+						MMGG2 = 1;
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(4103);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(10897);	
+												MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						xitie = 0;
+						delay_ms(1000);
+		MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG1 = 0;
+						MMGG2 = 0;
+						MMGG3 = 1;									
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(4103);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(10897);	
+						MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						Set_Pwm(0,0,0,0);
+
+	}
+			else if(HAOMA3==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG1 = 1;
+						MMGG2 = 1;
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(2570);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(12430);	
+												MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						xitie = 0;
+						delay_ms(1000);
+			MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG1 = 0;
+						MMGG2 = 0;
+						MMGG3 = 1;									
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(2570);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(12430);	
+						MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						Set_Pwm(0,0,0,0);
+
+	}
+			else if(HAOMA4==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG1 = 1;
+						MMGG2 = 1;
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(5641);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(1859);		
+												MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						xitie = 0;
+						delay_ms(1000);
+		MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG1 = 0;
+						MMGG2 = 0;
+						MMGG3 = 1;									
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(5641);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(1859);	
+						MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+Set_Pwm(0,0,0,0);						
+
+	}
+			else if(HAOMA5==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG1 = 1;
+						MMGG2 = 1;
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(4103);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(2570);	
+												MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						xitie = 0;
+						delay_ms(1000);
+		MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG1 = 0;
+						MMGG2 = 0;
+						MMGG3 = 1;									
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(4103);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(2570);	
+							MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+Set_Pwm(0,0,0,0);						
+	}
+			else if(HAOMA6==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG1 = 1;
+						MMGG2 = 1;
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(2570);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(4930);	
+												MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+						xitie = 0;
+						delay_ms(1000);
+		MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG1 = 0;
+						MMGG2 = 0;
+						MMGG3 = 1;									
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(2570);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(4930);	
+							MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);		
+Set_Pwm(0,0,0,0);						
+
+	}
+			else if(HAOMA7==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(0,0,-4000,0);//左右横上
+						delay_ms(5641);
+														MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						xitie = 0;
+						delay_ms(1000);
+		MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG3 = 1;					
+						Set_Pwm(0,0,-4000,0);//左右横上
+						delay_ms(5641);
+			MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+		Set_Pwm(0,0,0,0);
+
+	}
+			else if(HAOMA8==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(0,0,-4000,0);//左右横上
+						delay_ms(4103);
+														MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						xitie = 0;
+						delay_ms(1500);
+		MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG3 = 1;					
+						Set_Pwm(0,0,-4000,0);//左右横上
+						delay_ms(4103);
+			MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+		Set_Pwm(0,0,0,0);
+	}
+			else if(HAOMA9==0)
+	{
+						xitie = 1;
+						delay_ms(1500);
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(0,0,-4000,0);//左右横上
+						delay_ms(2570);
+														MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						xitie = 0;
+						delay_ms(1000);
+				MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG3 = 1;					
+						Set_Pwm(0,0,-4000,0);//左右横上
+						delay_ms(2570);
+									MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+		Set_Pwm(0,0,0,0);
+
+	}
+
+		if(heiqiboyi_flag==1)
+		{
+			if( mode7==0)
+			{
+			//走9
+					xitie = 1;
+						delay_ms(1500);
+						MMGG3 = 0;
+								MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(0,0,-4000,0);//左右横上
+						delay_ms(2570);
+														MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						xitie = 0;
+						delay_ms(1000);
+				MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG3 = 1;					
+						Set_Pwm(0,0,-4000,0);//左右横上
+						delay_ms(2570);
+									MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+		Set_Pwm(0,0,0,0);
+		heiqiboyi_flag++;
+		}	
+	}
+		if(heiqiboyi_flag==2)
+		{//走1
+			if( mode7==0)
+			{
+					xitie = 1;
+						delay_ms(1500);
+						MMGG1 = 1;
+						MMGG2 = 1;
+						MMGG3 = 0;
+						MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(5641);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(9359);	
+												MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						xitie = 0;
+						delay_ms(1000);
+		MMGG4 = 0;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						MMGG1 = 0;
+						MMGG2 = 0;
+						MMGG3 = 1;									
+						Set_Pwm(-4000,-4000,-4000,0);//左右横上
+						delay_ms(5641);
+						Set_Pwm(-4000,-4000,0,0);//左右横上
+						delay_ms(9359);	
+						MMGG4 = 1;
+						Set_Pwm(0,0,0,-4000);//左右横上
+						delay_ms(1500);
+						Set_Pwm(0,0,0,0);
+				
+			}
+			
+		}
+	else
+	{
+		Set_Pwm(0,0,0,0);
+		LED1=0;
+		LED2=0;
+		LED3=0;
+		LED4=0;
+		delay_ms(200);
+		LED1=1;
+		LED2=1;
+		LED3=1;
+		LED4=1;	
+		delay_ms(200);		
+	}
+	
+}

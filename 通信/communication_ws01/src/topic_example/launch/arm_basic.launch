@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="color_dected" type="color_dected.py" name="my_visual" output="screen" />
+    <node pkg="topic_example" type="publish_node" name="my_tr" output="screen" />  
+</launch>
